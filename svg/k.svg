@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <title>K is for Kite</title>
+  <!-- Kite body -->
+  <polygon points="100,60 70,100 100,140 130,100" fill="#e74c3c" />
+  <!-- Kite cross -->
+  <line x1="100" y1="60" x2="100" y2="140" stroke="#ffffff" stroke-width="2" />
+  <line x1="70" y1="100" x2="130" y2="100" stroke="#ffffff" stroke-width="2" />
+  <!-- Kite tails -->
+  <path d="M100 140 C90 150, 80 160, 70 170" fill="none" stroke="#f1c40f" stroke-width="2" />
+  <path d="M100 140 C95 155, 90 165, 85 175" fill="none" stroke="#e67e22" stroke-width="2" />
+  <path d="M100 140 C105 155, 110 165, 115 175" fill="none" stroke="#f1c40f" stroke-width="2" />
+  <!-- Kite string -->
+  <path d="M100 60 C90 50, 80 45, 50 40" fill="none" stroke="#7f8c8d" stroke-width="1" />
+  <!-- Text label -->
+  <text x="100" y="180" font-family="Arial" font-size="20" text-anchor="middle" fill="#000">Kite</text>
+</svg>

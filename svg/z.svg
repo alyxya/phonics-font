@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <title>Z is for Zebra</title>
+  <!-- Zebra body -->
+  <ellipse cx="100" cy="110" rx="45" ry="25" fill="#ffffff" />
+  <!-- Zebra head -->
+  <ellipse cx="150" cy="85" rx="20" ry="15" fill="#ffffff" />
+  <!-- Zebra legs -->
+  <rect x="80" y="130" width="10" height="30" fill="#ffffff" rx="3" />
+  <rect x="110" y="130" width="10" height="30" fill="#ffffff" rx="3" />
+  <!-- Zebra ears -->
+  <polygon points="145,73 155,65 155,80" fill="#ffffff" />
+  <polygon points="165,73 175,65 175,80" fill="#ffffff" />
+  <!-- Zebra eye -->
+  <circle cx="160" cy="85" r="3" fill="#000000" />
+  <!-- Zebra tail -->
+  <path d="M55 110 C45 100, 40 90, 50 85" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" />
+  <!-- Zebra stripes -->
+  <path d="M60 95 L70 90" fill="none" stroke="#000000" stroke-width="3" />
+  <path d="M80 95 L90 90" fill="none" stroke="#000000" stroke-width="3" />
+  <path d="M100 95 L110 90" fill="none" stroke="#000000" stroke-width="3" />
+  <path d="M120 95 L130 90" fill="none" stroke="#000000" stroke-width="3" />
+  <path d="M140 90 L145 75" fill="none" stroke="#000000" stroke-width="3" />
+  <path d="M155 90 L160 75" fill="none" stroke="#000000" stroke-width="3" />
+  <path d="M70 110 L80 120" fill="none" stroke="#000000" stroke-width="3" />
+  <path d="M90 110 L100 120" fill="none" stroke="#000000" stroke-width="3" />
+  <path d="M110 110 L120 120" fill="none" stroke="#000000" stroke-width="3" />
+  <path d="M130 110 L140 105" fill="none" stroke="#000000" stroke-width="3" />
+  <path d="M80 130 L80 145" fill="none" stroke="#000000" stroke-width="3" />
+  <path d="M110 130 L110 145" fill="none" stroke="#000000" stroke-width="3" />
+  <!-- Text label -->
+  <text x="100" y="180" font-family="Arial" font-size="20" text-anchor="middle" fill="#000">Zebra</text>
+</svg>

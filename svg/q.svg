@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <title>Q is for Queen</title>
+  <!-- Crown -->
+  <polygon points="70,80 85,60 100,80 115,60 130,80 130,100 70,100" fill="#f1c40f" />
+  <circle cx="85" cy="70" r="5" fill="#e74c3c" />
+  <circle cx="100" cy="70" r="5" fill="#3498db" />
+  <circle cx="115" cy="70" r="5" fill="#e74c3c" />
+  <!-- Queen head -->
+  <circle cx="100" cy="120" r="25" fill="#fde9d9" />
+  <!-- Queen eyes -->
+  <ellipse cx="90" cy="115" rx="3" ry="4" fill="#2c3e50" />
+  <ellipse cx="110" cy="115" rx="3" ry="4" fill="#2c3e50" />
+  <!-- Queen mouth -->
+  <path d="M95 130 Q100 135, 105 130" fill="none" stroke="#e74c3c" stroke-width="2" />
+  <!-- Queen necklace -->
+  <path d="M80 140 Q100 150, 120 140" fill="none" stroke="#f1c40f" stroke-width="4" />
+  <!-- Queen hair -->
+  <path d="M75 105 Q65 115, 75 125" fill="none" stroke="#8e44ad" stroke-width="5" />
+  <path d="M125 105 Q135 115, 125 125" fill="none" stroke="#8e44ad" stroke-width="5" />
+  <!-- Text label -->
+  <text x="100" y="180" font-family="Arial" font-size="20" text-anchor="middle" fill="#000">Queen</text>
+</svg>

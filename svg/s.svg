@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <title>S is for Snake</title>
+  <!-- Snake body -->
+  <path d="M50 130 C60 110, 80 100, 100 110 C120 120, 140 110, 150 90 C160 70, 150 50, 130 50" fill="none" stroke="#2ecc71" stroke-width="15" stroke-linecap="round" />
+  <!-- Snake head -->
+  <circle cx="130" cy="50" r="12" fill="#2ecc71" />
+  <!-- Snake eye -->
+  <circle cx="134" cy="45" r="3" fill="#ffffff" />
+  <circle cx="134" cy="45" r="1" fill="#000000" />
+  <!-- Snake tongue -->
+  <path d="M142 50 L155 45 L152 50 L155 55" fill="none" stroke="#e74c3c" stroke-width="2" stroke-linecap="round" />
+  <!-- Snake pattern -->
+  <path d="M55 130 L60 115" fill="none" stroke="#27ae60" stroke-width="5" />
+  <path d="M75 115 L80 102" fill="none" stroke="#27ae60" stroke-width="5" />
+  <path d="M95 105 L100 115" fill="none" stroke="#27ae60" stroke-width="5" />
+  <path d="M115 118 L120 108" fill="none" stroke="#27ae60" stroke-width="5" />
+  <path d="M135 105 L140 92" fill="none" stroke="#27ae60" stroke-width="5" />
+  <path d="M150 85 L145 70" fill="none" stroke="#27ae60" stroke-width="5" />
+  <!-- Text label -->
+  <text x="100" y="180" font-family="Arial" font-size="20" text-anchor="middle" fill="#000">Snake</text>
+</svg>

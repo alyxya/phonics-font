@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <title>Y is for Yak</title>
+  <!-- Yak body -->
+  <rect x="70" y="90" width="70" height="40" rx="20" fill="#8b4513" />
+  <!-- Yak head -->
+  <ellipse cx="150" cy="95" rx="20" ry="15" fill="#8b4513" />
+  <!-- Yak horns -->
+  <path d="M150 85 C160 70, 170 65, 165 60" fill="none" stroke="#7f8c8d" stroke-width="5" stroke-linecap="round" />
+  <path d="M150 85 C140 70, 130 65, 135 60" fill="none" stroke="#7f8c8d" stroke-width="5" stroke-linecap="round" />
+  <!-- Yak eye -->
+  <circle cx="160" cy="90" r="3" fill="#000000" />
+  <!-- Yak legs -->
+  <rect x="80" y="130" width="10" height="25" fill="#8b4513" rx="2" />
+  <rect x="120" y="130" width="10" height="25" fill="#8b4513" rx="2" />
+  <!-- Yak tail -->
+  <path d="M70 110 C60 120, 50 115, 55 100" fill="none" stroke="#8b4513" stroke-width="5" stroke-linecap="round" />
+  <!-- Yak fur -->
+  <path d="M70 90 C65 85, 60 88, 65 95" fill="none" stroke="#8b4513" stroke-width="5" stroke-linecap="round" />
+  <path d="M80 90 C75 85, 70 88, 75 95" fill="none" stroke="#8b4513" stroke-width="5" stroke-linecap="round" />
+  <path d="M90 90 C85 85, 80 88, 85 95" fill="none" stroke="#8b4513" stroke-width="5" stroke-linecap="round" />
+  <path d="M100 90 C95 85, 90 88, 95 95" fill="none" stroke="#8b4513" stroke-width="5" stroke-linecap="round" />
+  <!-- Text label -->
+  <text x="100" y="180" font-family="Arial" font-size="20" text-anchor="middle" fill="#000">Yak</text>
+</svg>
