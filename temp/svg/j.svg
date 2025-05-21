@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="500pt" height="500pt" viewBox="0 0 500 500" preserveAspectRatio="xMidYMid meet">
+<g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+<path d="M1000 2500 c0 -1000 0 -1000 1000 -1000 1000 0 1000 0 1000 1000 0 1000 0 1000 -1000 1000 -1000 0 -1000 0 -1000 -1000z m1800 0 c0 -700 0 -700 -700 -700 -700 0 -700 0 -700 700 0 700 0 700 700 700 700 0 700 0 700 -700z"/>
+<path d="M1500 2500 c0 -500 0 -500 500 -500 500 0 500 0 500 500 0 500 0 500 -500 500 -500 0 -500 0 -500 -500z"/>
+<text x="2500" y="1750" transform="scale(1,-1)" font-family="Arial" font-size="500" text-anchor="middle">J</text>
+</g>
+</svg>

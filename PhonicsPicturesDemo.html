@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phonics Pictures Font Demo</title>
+    <style>
+        @font-face {
+            font-family: 'PhonicsPictures';
+            src: url('PhonicsPicturesShapes.ttf') format('truetype');
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        h1, h2 {
+            color: #333;
+        }
+        
+        .phonics-display {
+            font-family: 'PhonicsPictures', sans-serif;
+            font-size: 72px;
+            line-height: 1.2;
+            margin: 20px 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 20px;
+        }
+        
+        .letter-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+        
+        .phonics-letter {
+            font-family: 'PhonicsPictures', sans-serif;
+            font-size: 72px;
+        }
+        
+        .letter-label {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        
+        .instructions {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        
+        .word-associations {
+            margin-top: 30px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Phonics Pictures Font</h1>
+    
+    <div class="instructions">
+        <h2>How to Use</h2>
+        <p>This font creates pictorial representations for each letter of the alphabet. Each letter shows a shape or picture of a word that begins with that letter.</p>
+        <p>To use this font:</p>
+        <ol>
+            <li>Install the font by double-clicking the PhonicsPicturesShapes.ttf file</li>
+            <li>Select "Install Font" in the Font Book app</li>
+            <li>Use the font in any application that supports custom fonts</li>
+        </ol>
+    </div>
+    
+    <h2>Alphabet Display</h2>
+    <div class="phonics-display">
+        <div class="letter-container">
+            <div class="phonics-letter">a</div>
+            <div class="letter-label">a for apple</div>
+        </div>
+        <div class="letter-container">
+            <div class="phonics-letter">b</div>
+            <div class="letter-label">b for ball</div>
+        </div>
+        <div class="letter-container">
+            <div class="phonics-letter">c</div>
+            <div class="letter-label">c for cat</div>
+        </div>
+        <div class="letter-container">
+            <div class="phonics-letter">d</div>
+            <div class="letter-label">d for dog</div>
+        </div>
+        <div class="letter-container">
+            <div class="phonics-letter">e</div>
+            <div class="letter-label">e for elephant</div>
+        </div>
+        <div class="letter-container">
+            <div class="phonics-letter">f</div>
+            <div class="letter-label">f for fish</div>
+        </div>
+        <div class="letter-container">
+            <div class="phonics-letter">g</div>
+            <div class="letter-label">g for giraffe</div>
+        </div>
+        <div class="letter-container">
+            <div class="phonics-letter">h</div>
+            <div class="letter-label">h for house</div>
+        </div>
+        <div class="letter-container">
+            <div class="phonics-letter">i</div>
+            <div class="letter-label">i for igloo</div>
+        </div>
+        <div class="letter-container">
+            <div class="phonics-letter">j</div>
+            <div class="letter-label">j for jellyfish</div>
+        </div>
+        <div class="letter-container">
+            <div class="phonics-letter">k</div>
+            <div class="letter-label">k for kite</div>
+        </div>
+        <div class="letter-container">
+            <div class="phonics-letter">l</div>
+            <div class="letter-label">l for lion</div>
+        </div>
+        <div class="letter-container">
+            <div class="phonics-letter">m</div>
+            <div class="letter-label">m for monkey</div>
+        </div>
+        <div class="letter-container">
+            <div class="phonics-letter">n</div>
+            <div class="letter-label">n for nest</div>
+        </div>
+        <div class="letter-container">
+            <div class="phonics-letter">o</div>
+            <div class="letter-label">o for octopus</div>
+        </div>
+        <div class="letter-container">
+            <div class="phonics-letter">p</div>
+            <div class="letter-label">p for penguin</div>
+        </div>
+        <div class="letter-container">
+            <div class="phonics-letter">q</div>
+            <div class="letter-label">q for queen</div>
+        </div>
+        <div class="letter-container">
+            <div class="phonics-letter">r</div>
+            <div class="letter-label">r for rabbit</div>
+        </div>
+        <div class="letter-container">
+            <div class="phonics-letter">s</div>
+            <div class="letter-label">s for snake</div>
+        </div>
+        <div class="letter-container">
+            <div class="phonics-letter">t</div>
+            <div class="letter-label">t for tiger</div>
+        </div>
+        <div class="letter-container">
+            <div class="phonics-letter">u</div>
+            <div class="letter-label">u for umbrella</div>
+        </div>
+        <div class="letter-container">
+            <div class="phonics-letter">v</div>
+            <div class="letter-label">v for violin</div>
+        </div>
+        <div class="letter-container">
+            <div class="phonics-letter">w</div>
+            <div class="letter-label">w for watermelon</div>
+        </div>
+        <div class="letter-container">
+            <div class="phonics-letter">x</div>
+            <div class="letter-label">x for xylophone</div>
+        </div>
+        <div class="letter-container">
+            <div class="phonics-letter">y</div>
+            <div class="letter-label">y for yacht</div>
+        </div>
+        <div class="letter-container">
+            <div class="phonics-letter">z</div>
+            <div class="letter-label">z for zebra</div>
+        </div>
+    </div>
+    
+    <div class="word-associations">
+        <h2>Complete Word-Letter Associations</h2>
+        <table>
+            <tr>
+                <th>Letter</th>
+                <th>Word</th>
+            </tr>
+            <tr><td>A</td><td>Apple</td></tr>
+            <tr><td>B</td><td>Ball</td></tr>
+            <tr><td>C</td><td>Cat</td></tr>
+            <tr><td>D</td><td>Dog</td></tr>
+            <tr><td>E</td><td>Elephant</td></tr>
+            <tr><td>F</td><td>Fish</td></tr>
+            <tr><td>G</td><td>Giraffe</td></tr>
+            <tr><td>H</td><td>House</td></tr>
+            <tr><td>I</td><td>Igloo</td></tr>
+            <tr><td>J</td><td>Jellyfish</td></tr>
+            <tr><td>K</td><td>Kite</td></tr>
+            <tr><td>L</td><td>Lion</td></tr>
+            <tr><td>M</td><td>Monkey</td></tr>
+            <tr><td>N</td><td>Nest</td></tr>
+            <tr><td>O</td><td>Octopus</td></tr>
+            <tr><td>P</td><td>Penguin</td></tr>
+            <tr><td>Q</td><td>Queen</td></tr>
+            <tr><td>R</td><td>Rabbit</td></tr>
+            <tr><td>S</td><td>Snake</td></tr>
+            <tr><td>T</td><td>Tiger</td></tr>
+            <tr><td>U</td><td>Umbrella</td></tr>
+            <tr><td>V</td><td>Violin</td></tr>
+            <tr><td>W</td><td>Watermelon</td></tr>
+            <tr><td>X</td><td>Xylophone</td></tr>
+            <tr><td>Y</td><td>Yacht</td></tr>
+            <tr><td>Z</td><td>Zebra</td></tr>
+        </table>
+    </div>
+
+    <footer style="margin-top: 50px; text-align: center; color: #666; font-size: 14px;">
+        <p>Phonics Pictures Font - Created using Python and FontTools</p>
+    </footer>
+</body>
+</html>
