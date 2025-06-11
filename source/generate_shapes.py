@@ -8,6 +8,30 @@ from fontTools.pens.ttGlyphPen import TTGlyphPen
 from fontTools.ttLib.tables import _c_m_a_p
 from fontTools.ttLib.tables.O_S_2f_2 import Panose
 
+class FlippedPen:
+    """A pen wrapper that flips y-coordinates vertically"""
+    def __init__(self, pen, font_size=1000):
+        self.pen = pen
+        self.font_size = font_size
+    
+    def flip_y(self, y):
+        """Flip y-coordinate around the center of the font"""
+        return self.font_size - y
+    
+    def moveTo(self, pt):
+        x, y = pt
+        self.pen.moveTo((x, self.flip_y(y)))
+    
+    def lineTo(self, pt):
+        x, y = pt
+        self.pen.lineTo((x, self.flip_y(y)))
+    
+    def closePath(self):
+        self.pen.closePath()
+    
+    def glyph(self):
+        return self.pen.glyph()
+
 # Configuration
 FONT_NAME = "Phonics"
 OUTPUT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -1845,12 +1869,13 @@ def add_letter_glyphs_to_font(font):
     
     # Create a simple .notdef glyph (empty square)
     pen = TTGlyphPen(glyphSet=font.getGlyphSet())
-    pen.moveTo((100, 100))
-    pen.lineTo((900, 100))
-    pen.lineTo((900, 900))
-    pen.lineTo((100, 900))
-    pen.closePath()
-    font['glyf']['.notdef'] = pen.glyph()
+    flipped_pen = FlippedPen(pen, FONT_SIZE)
+    flipped_pen.moveTo((100, 100))
+    flipped_pen.lineTo((900, 100))
+    flipped_pen.lineTo((900, 900))
+    flipped_pen.lineTo((100, 900))
+    flipped_pen.closePath()
+    font['glyf']['.notdef'] = flipped_pen.glyph()
     font['hmtx'].metrics['.notdef'] = (FONT_SIZE, 0)
     
     # Add glyphs for each lowercase letter
@@ -1860,10 +1885,11 @@ def add_letter_glyphs_to_font(font):
         
         # Create a glyph with a letter-specific shape
         pen = TTGlyphPen(glyphSet=font.getGlyphSet())
+        flipped_pen = FlippedPen(pen, FONT_SIZE)
         
         if letter in letter_shapes:
             # Use a specific drawing function for this letter
-            letter_shapes[letter](pen)
+            letter_shapes[letter](flipped_pen)
             print(f"Added custom shape for '{letter}' (Unicode: {unicode_value})")
         else:
             # For letters without specific shapes, create a simple generic shape
@@ -1871,14 +1897,14 @@ def add_letter_glyphs_to_font(font):
             radius = FONT_SIZE * 0.4
             
             # Create a basic shape (circle with the letter inside)
-            pen.moveTo((center_x + radius, center_y))
+            flipped_pen.moveTo((center_x + radius, center_y))
             segments = 24
             for j in range(1, segments + 1):
                 angle = 2 * math.pi * j / segments
                 x = center_x + radius * math.cos(angle)
                 y = center_y + radius * math.sin(angle)
-                pen.lineTo((x, y))
-            pen.closePath()
+                flipped_pen.lineTo((x, y))
+            flipped_pen.closePath()
             
             # Add letter identifier (simple approximation)
             letter_lines = []
@@ -1931,7 +1957,7 @@ def add_letter_glyphs_to_font(font):
                     angle = 2 * math.pi * j / segments
                     x = center_x + inner_radius * math.cos(angle)
                     y = center_y + inner_radius * math.sin(angle)
-                    pen.lineTo((x, y))
+                    flipped_pen.lineTo((x, y))
                 pen.closePath()
             elif letter == 'p':
                 # p - simplified p
@@ -1949,7 +1975,7 @@ def add_letter_glyphs_to_font(font):
                     angle = 2 * math.pi * j / segments
                     x = center_x + inner_radius * math.cos(angle)
                     y = center_y + inner_radius * math.sin(angle)
-                    pen.lineTo((x, y))
+                    flipped_pen.lineTo((x, y))
                 pen.closePath()
                 
                 # Tail
@@ -2015,13 +2041,13 @@ def add_letter_glyphs_to_font(font):
             
             # Draw letter lines
             for line in letter_lines:
-                pen.moveTo(line[0])
-                pen.lineTo(line[1])
-                pen.closePath()
+                flipped_pen.moveTo(line[0])
+                flipped_pen.lineTo(line[1])
+                flipped_pen.closePath()
                 
             print(f"Added generic shape for '{letter}' (Unicode: {unicode_value})")
         
-        font['glyf'][glyph_name] = pen.glyph()
+        font['glyf'][glyph_name] = flipped_pen.glyph()
         font['hmtx'].metrics[glyph_name] = (FONT_SIZE, 0)
         
         # Map the Unicode character to this glyph
