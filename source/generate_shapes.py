@@ -9,7 +9,7 @@ from fontTools.ttLib.tables import _c_m_a_p
 from fontTools.ttLib.tables.O_S_2f_2 import Panose
 
 # Configuration
-FONT_NAME = "PhonicsPicturesShapes"
+FONT_NAME = "Phonics"
 OUTPUT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 IMAGES_DIR = os.path.join(OUTPUT_DIR, "images")
 OUTPUT_FILE = os.path.join(OUTPUT_DIR, f"{FONT_NAME}.ttf")
