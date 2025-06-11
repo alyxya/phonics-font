@@ -12,7 +12,8 @@ This project creates custom phonics-oriented fonts where each lowercase letter (
 - **Complete A-Z Coverage**: All 26 lowercase letters have custom shapes
 - **Easily Installable**: Works on macOS and other systems that support TTF fonts
 - **HTML Demo Page**: Includes a demo page to showcase all letter shapes
-- **Vector-Based**: All shapes are vector-based for clean rendering at any size
+- **Multiple Formats**: Supports both SVG vector shapes and PNG images
+- **Vector and Raster Assets**: SVG files for scalable shapes, PNG images for reference
 
 ## Word-Letter Associations
 
@@ -59,7 +60,7 @@ source .venv/bin/activate
 python source/generate_shapes.py
 ```
 
-This will generate `PhonicsPicturesShapes.ttf` in the project directory.
+This will generate `Phonics.ttf` in the project directory.
 
 ### Install the Font
 
@@ -76,7 +77,9 @@ This will generate `PhonicsPicturesShapes.ttf` in the project directory.
 To customize the shapes used for each letter:
 
 1. Edit the corresponding `draw_*` functions in `source/generate_shapes.py`
-2. Run the script again to generate a new font
+2. Modify SVG files in the `svg/` directory for vector-based shapes
+3. Update PNG images in the `images/` directory for raster references
+4. Run the script again to generate a new font
 
 ## Font Format
 

@@ -11,20 +11,11 @@ This is a phonics-oriented font project that creates custom TTF fonts where each
 - `*.ttf` - Generated font files
 - `*.html` - Demo pages for showcasing fonts
 
-## Available Font Variants
-- `PhonicsPictures.ttf` - Main phonics font
-- `PhonicsPicturesShapes.ttf` - Shapes variant
-- `PhonicsPicturesVisible.ttf` - Visible variant
+## Available Font Files
+- `Phonics.ttf` - Main phonics font with letter shapes
 
 ## Key Scripts
-- `generate_font.py` - Main font generation script
-- `generate_shapes.py` - Generates shapes font variant
-- `generate_simple_font.py` - Simple font generation
-- `generate_visible_font.py` - Visible font variant
-- `generate_visual_font.py` - Visual font variant
-- `generate_svg_font.py` - SVG-based font generation
-- `generate_color_font.py` - Color font generation
-- `generate_bitmap_font.py` - Bitmap font generation
+- `generate_shapes.py` - Main font generation script that creates shapes font
 
 ## Dependencies
 - Python 3.x
@@ -34,16 +25,11 @@ This is a phonics-oriented font project that creates custom TTF fonts where each
 
 ## Common Commands
 ```bash
-# Activate virtual environment
+# Activate virtual environment (if using one)
 source .venv/bin/activate
 
-# Generate main shapes font
+# Generate the phonics font
 python source/generate_shapes.py
-
-# Generate other variants
-python source/generate_font.py
-python source/generate_visible_font.py
-python source/generate_visual_font.py
 ```
 
 ## Letter-Word Associations
@@ -51,13 +37,12 @@ Each letter represents a word:
 A=Apple, B=Ball, C=Cat, D=Dog, E=Elephant, F=Fish, G=Giraffe, H=House, I=Igloo, J=Jellyfish, K=Kite, L=Lion, M=Monkey, N=Nest, O=Octopus, P=Penguin, Q=Queen, R=Rabbit, S=Snake, T=Tiger, U=Umbrella, V=Violin, W=Watermelon, X=Xylophone, Y=Yacht, Z=Zebra
 
 ## Testing
-View generated fonts using the HTML demo files:
-- `PhonicsPicturesDemo.html`
-- `PhonicsPicturesSimple.html` 
-- `PhonicsPicturesVisual.html`
+View the generated font using the HTML demo file:
+- `PhonicsDemo.html`
 
 ## Development Notes
 - Font generation uses Python's Pillow library for image processing
 - fonttools library handles TTF font creation
-- SVG files provide vector-based letter shapes
-- Images provide raster-based alternatives
+- SVG files in `/svg/` provide vector-based letter shapes
+- PNG images in `/images/` provide raster-based references
+- Each letter (a-z) has corresponding SVG and PNG files
